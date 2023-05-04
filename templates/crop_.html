@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 FARMSY | CROP PREDICTION</title>
+    <link rel="stylesheet" type="text/css" href="static\style3.css">
+</head>
+
+<body>
+    <h1 class="heading">. CROP PREDICTION .</h1>
+    <div class="content">
+        <h2> 🌐 Information:</h2>
+        <p> Precision agriculture is in trend nowadays. It helps the farmers to get informed decision
+            about the farming strategy. Here, we have built a predictive model to recommend the most
+            suitable crops to grow in a particular farm based on various parameters.
+            Crop Prediction is one of the most important aspects of precision agriculture.
+            Crop recommendations are based on a number of factors. Precision agriculture seeks to
+            define these criteria on a site-by-site basis in order to address crop selection issues.
+        </p>
+        <h2>❓Working:</h2>
+        <p> Complete all the parameters and the machine learning model will predict the most
+            suitable crops to grow in a particular farm based on the input values.
+        </p>
+        <h3>🧑🏻‍🌾Find out the most suitable crop to grow in your farm:</h3>
+        <form method="POST" action="predict">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>
+                        <h3>Nitrogen (N) :</h3><br>
+                        <p>This field represents the amount of Nitrogen (in kg/ha) present in the soil for
+                            the crop. Nitrogen is an essential nutrient required for plant growth, and its
+                            deficiency or excess can affect the growth as well as the yield of the crop.</p><br>
+                        <input type="number" step="any" name="input1" class="input-box">
+                    </td>
+                    <td>
+                        <h3>Phosphorus (P) :</h3><br>
+                        <p>This field represents the amount of Phosphorus (in kg/ha) present in the soil for
+                            the crop. Phosphorus is another essential nutrient required for plant growth and
+                            is important for processes such as energy transfer and photosynthesis.</p><br>
+                        <input type="number" step="any" name="input2" class="input-box">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Potassium (K) :</h3><br>
+                        <p>This field represents the amount of Potassium (in kg/ha) present in the soil for
+                            the crop. Potassium is also an essential nutrient required for plant growth and
+                            plays a role in various physiological processes such as water regulation and
+                            nutrient transport.</p><br>
+                        <input type="number" step="any" name="input3" class="input-box">
+                    </td>
+                    <td>
+                        <h3>Soil pH :</h3><br>
+                        <p>This field represents the soil pH during the crop's growing period. pH is a
+                            measure of the acidity or alkalinity of the soil and can affect the
+                            availability of nutrients for the crop.</p><br><br>
+                        <input type="number" step="any" name="input4" class="input-box">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Temperature (°C) :</h3><br>
+                        <p>This field represents the average temperature (in Celsius) during the crop's
+                            growing period. Temperature is an important environmental factor that can
+                            affect crop growth and development, and different crops have different
+                            temperature requirements for optimal growth.</p><br><br>
+                        <input type="number" step="any" name="input5" class="input-box">
+                    </td>
+                    <td>
+                        <h3>Humidity (%) :</h3><br>
+                        <p>This field represents the average relative humidity (in percentage) during
+                            the crop's growing period. Humidity is another important environmental
+                            factor that can affect crop growth, as high humidity can promote disease
+                            and fungal growth.</p><br><br>
+                        <input type="number" step="any" name="input6" class="input-box">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Rainfall (mm) :</h3><br>
+                        <p>This field represents the amount of rainfall (in mm) received during the
+                            crop's growing period. Rainfall is another important environmental factor
+                            that can affect crop growth, and different crops have different water
+                            requirements for optimal growth.</p><br><br>
+                        <input type="number" step="any" name="input7" class="input-box">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Make Prediction" class="predict-button">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    max-width: 1260px;
+    height: 80px;
+    margin: 0;
+    background-color: rgba(144, 238, 144,1);
+    /*background-color: rgba(32, 178, 170,1);*/
+    padding: 5px;
+}
+
+.icon {
+    width: 300px;
+    float: left;
+    height: 70px;
+    padding-top: 10px;
+    margin-right: 175px;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 0px;
+    margin-top: 5px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+    margin-left: 200px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+.content .home{
+    padding: 10px;
+    margin: 40px;
+    background-color: rgba(144, 238, 144,1);
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content .home .hometext{
+    width: 550px;
+    height: 300px;
+}
+
+.content .home .hometext h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.content .home .hometext p{
+    padding: 20px;
+    text-align:justify;
+    font-size: 18px;
+}
+
+.content .home .homeimg{
+    background: url(bulb.jpeg);
+    background-size: 550px;
+    width: 550px;
+    height: 300px;
+    opacity: 0;
+    animation: fade-in 4s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.container{
+    max-width: 1140px;
+    padding: 0px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.container h4{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 35px;
+    background-color:  rgba(144, 238, 144,1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .cards a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-left: 480px;
+    background-color: black;
+}
+
+.container .cards .yield a{
+    margin-left: 600px;
+}
+
+.container .cards h5{
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container .cards a:hover{
+    color: black;
+    background-color: white;
+}
+
+.container .cards .crop p{
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.container .cards .yield p{
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.container .cards .crop, .yield{
+    margin: 0px;
+    padding: 20px;
+    width:1150px;
+    height: 300px;
+    background-color:  rgba(144, 238, 144,1);
+}
+#img1{
+    height: 100px;
+    margin: 10px;
+    background: url(icons8-growing-plant-96.png)no-repeat;
+    background-position: center;
+}
+#img2{
+    margin: 10px;
+    height: 100px;
+    background: url(icons8-harvest-64.png)no-repeat;
+    background-position: center;
+    background-size: 20%;
+}
+.about{
+    max-width: 1140px;
+    padding: 0px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.about h4{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 35px;
+    width: 1200;
+    background-color:  rgba(144, 238, 144,1);
+    font-weight: bold;
+    font-family: Arial;
+}
+.about .aboutus{
+    padding: 20px;
+    margin: px;
+    background-color: rgba(144, 238, 144,1);
+    height: 350px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about .aboutus .abouttext{
+    width: 550px;
+    height: 300px;
+}
+
+.about .aboutus .abouttext h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.about .aboutus .abouttext p{
+    padding: 20px;
+    text-align:justify;
+    font-size: 18px;
+}
+
+
+.about .aboutus .aboutimg1{
+    background-image: url(sunplant.jpeg);
+    background-size: 550px;
+    width: 550px;
+    height: 300px;
+    animation: changeImage 5s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url(sunplant.jpeg);
+    }
+    100% {
+        background-image: url(sunset.jpg);
+    }
+    0% {
+        background-image: url(sunplant.jpeg);
+    }
+}
+
+.footer .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-left: 25px;
+}
+.footer .box-container .box h3, .coi h3{
+    color: black;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.footer .box-container .box a,.coi a{
+    color: #3f656b;
+    display: block;
+    font-size: 15px;
+    padding: 5px 0;
+    text-decoration: none;
+}
+.footer .box-container .box a:hover{
+    color:var(--brown);
+    text-decoration:underline;
+}
+.footer .credit{
+    text-align: center;
+    padding:5px;
+    margin-top:5px;
+    padding-top: 15px;
+    font-size: 15px;
+    color:rgba(144, 238, 144,1);
+    border-top: .1rem solid rgba(0,0,0,.1);
+    padding-bottom: 15px;
+    background-color: var(--brown);
+}
+.footer .credit span{
+    color:rgb(78, 133, 78);
+}

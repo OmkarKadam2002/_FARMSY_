@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 FARMSY | CROP RESULT</title>
+    <link rel="stylesheet" type="text/css" href="static\style4.css">
+</head>
+<body>
+    <h2 class="heading">🌾THE CROP PREDICTED FOR YOU IS : {{ prediction }} 🌾</h2>
+    <div class="content">
+        <div class="img">
+            <img src="{{ image_url }}">
+        </div>
+        <p>{{ desc }}<br>Learn more about it on: <a href="{{ link_ }}">{{ link_ }}</a> </p> 
+    </div>
+</body>
+</html>

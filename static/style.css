@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("landing.jpg") no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.navbar {
+    width: 1270px;
+    height: 80px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    /*background-color: rgba(144, 238, 144,0.8);*/
+    /*background-color: rgba(32, 178, 170,0.3);*/
+    padding: 5px;
+    position: relative;
+}
+
+.icon {
+    width: 300px;
+    float: left;
+    height: 70px;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    margin-left: 0px;
+    /*float: left;*/
+    padding-top: 0px;
+    margin-top: 5px;
+}
+
+.center {
+    margin: 50px 200px 0px 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 300px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.written {
+    margin: 20px 50px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.anim {
+    margin: 10px;
+}
+
+.anim img {
+    height: 50px;
+    animation: moveUpDown 1.25s ease-in-out infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.center p {
+    padding: 20px 40px 30px 40px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.center .explore {
+    padding: 10px;
+    margin: 0px 0px 30px 375px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(1, 160, 152);
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+    text-decoration: none;
+}
+
+.center .explore:hover {
+    background-color: black;
+}
+
+@keyframes moveUpDown {
+    from {
+      top: 0;
+    }
+    to {
+      top: 15px;
+    }
+  }
